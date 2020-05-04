@@ -3,7 +3,9 @@ Chat list design in which profiles on top will scroll horizontally and the table
 
 Note 1: If you will allow to access Contacts then all the phone contacts will apppear in the list as shown below
 
-![Simulator Screen Shot - iPhone 11 - 2020-05-05 at 01 50 07](https://user-images.githubusercontent.com/16478904/81011490-b65baa80-8e75-11ea-9a2a-e2f4da6476cf.png)
+
+![Simulator Screen Shot - iPhone 11 - 2020-05-05 at 03 13 51](https://user-images.githubusercontent.com/16478904/81016638-75b45f00-8e7e-11ea-855e-38e82c5c64f4.png)
+
 
 Note 2: If you will not allow to access Contacts then a dummy list will populate for the chat list like below image
 
