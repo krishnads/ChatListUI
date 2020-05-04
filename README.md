@@ -10,3 +10,6 @@ Note 2: If you will not allow to access Contacts then a dummy list will populate
 ![Simulator Screen Shot - iPhone 11 - 2020-05-05 at 01 53 52](https://user-images.githubusercontent.com/16478904/81011485-b22f8d00-8e75-11ea-84c0-a21d3afd1aab.png)
 
 
+View Hierarchy will look like this - 
+
+![Screenshot 2020-05-05 at 2 16 48 AM](https://user-images.githubusercontent.com/16478904/81012034-8365e680-8e76-11ea-9505-b6203e33b3da.png)
