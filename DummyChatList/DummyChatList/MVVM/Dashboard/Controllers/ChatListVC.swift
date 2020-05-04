@@ -62,7 +62,7 @@ extension ChatListVC: UICollectionViewDelegate, UICollectionViewDataSource, UICo
   }
   
   func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-    return CGSize(width: 80, height: 80)
+    return CGSize(width: 76, height: 76)
   }
 }
 
@@ -76,11 +76,17 @@ extension ChatListVC: UITableViewDelegate, UITableViewDataSource {
     if let chat = viewModel.getChatUserAt(indexPath.row) {
       cell.setupCellWith(chat: chat)
     }
+    if indexPath.row == 0 {
+      cell.labelMessage.text = "Typing..."
+      cell.labelMessage.textColor = .blue
+    } else {
+      cell.labelMessage.textColor = .black
+    }
     return cell
   }
   
   func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-    return UIScreen.main.bounds.width * (125.0 / 375.0)
+    return UIScreen.main.bounds.width * (72.0 / 375.0)
   }
 }
 

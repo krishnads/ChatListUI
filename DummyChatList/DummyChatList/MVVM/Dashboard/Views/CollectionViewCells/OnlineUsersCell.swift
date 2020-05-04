@@ -11,14 +11,17 @@ import UIKit
 class OnlineUsersCell: UICollectionViewCell {
     
   @IBOutlet weak var imageViewUser: UIImageView!
-  @IBOutlet weak var imageViewOnlineStatus: UIImageView!
-
+  @IBOutlet weak var viewContainerOnlineStatus: UIView!
+  @IBOutlet weak var viewOnlineStatus: UIView!
+  
   override func awakeFromNib() {
-    imageViewUser.setCornerRadius(30.0)
+    imageViewUser.setCornerRadius(25.0)
+    viewContainerOnlineStatus.setCornerRadius(9.0)
+    viewOnlineStatus.setCornerRadius(5.0)
   }
   
   func setupCellWith(user: OnlineUsers) {
-    imageViewOnlineStatus.isHidden = user.userOnlineStatus ?? false
+    viewContainerOnlineStatus.isHidden = user.userOnlineStatus ?? false
     imageViewUser.image = user.userImage
   }
 }

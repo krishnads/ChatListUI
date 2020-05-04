@@ -11,7 +11,8 @@ import UIKit
 class ChatListCell: UITableViewCell {
   
   @IBOutlet weak var imageViewUser: UIImageView!
-  @IBOutlet weak var imageViewOnlineStatus: UIImageView!
+  @IBOutlet weak var viewContainerOnlineStatus: UIView!
+  @IBOutlet weak var viewOnlineStatus: UIView!
 
   @IBOutlet weak var labelUserName: UILabel!
   @IBOutlet weak var labelMessage: UILabel!
@@ -21,8 +22,10 @@ class ChatListCell: UITableViewCell {
   
   override func awakeFromNib() {
     super.awakeFromNib()
-    imageViewUser.setCornerRadius(40.0)
-    labelUnreadCount.setCornerRadius(15.0)
+    imageViewUser.setCornerRadius(30.0)
+    labelUnreadCount.setCornerRadius(12.0)
+    viewContainerOnlineStatus.setCornerRadius(9.0)
+    viewOnlineStatus.setCornerRadius(5.0)
   }
 
   override func setSelected(_ selected: Bool, animated: Bool) {
@@ -30,7 +33,7 @@ class ChatListCell: UITableViewCell {
   }
   
   func setupCellWith(chat: ChatList) {
-    imageViewOnlineStatus.isHidden = chat.userOnlineStatus ?? false
+    viewContainerOnlineStatus.isHidden = chat.userOnlineStatus ?? false
     imageViewUser.image = chat.userImage
     labelUserName.text = chat.userName ?? ""
     labelMessage.text = chat.message ?? ""

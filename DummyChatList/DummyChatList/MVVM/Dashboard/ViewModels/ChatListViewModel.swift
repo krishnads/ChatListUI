@@ -67,7 +67,7 @@ class ChatListViewModel {
         user.userOnlineStatus = (i % 2) != 0 ? true : false
         user.userImage = (i % 2) == 0 ? #imageLiteral(resourceName: "user1") : #imageLiteral(resourceName: "user2")
         user.unreadCount = (i % 2) == 0 ? 4 : 7
-        user.time = (i % 2) == 0 ? "Now" : "Yesterday"
+        user.time = (i % 2) == 0 ? "14:27" : "1 day ago"
         user.message = (i % 2) == 0 ? "What to do?" : "Let's meet tomowrrow"
         arrayChatList?.append(user)
       }
